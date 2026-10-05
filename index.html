@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Space Corner v3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    --bg: #050714;
+    --bg-glow-a: #121c4e;
+    --bg-glow-b: #1f1147;
+    --ink: #E2E8FF;
+    --muted: #94A3B8;
+    --card: rgba(16, 23, 54, 0.75);
+    --card-solid: #101736;
+    --field: rgba(7, 10, 26, 0.85);
+    --line: rgba(148, 163, 184, 0.2);
+    --btn-bg: #3B82F6;
+    --btn-ink: #FFFFFF;
+    --pop: #EC4899;
+    --focus: #60A5FA;
+    --star: #93C5FD;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #F4EFFF;
+      --bg-glow-a: #D9C8FF;
+      --bg-glow-b: #FFD9EC;
+      --ink: #1E1650;
+      --muted: #51468C;
+      --card: rgba(255, 255, 255, 0.8);
+      --card-solid: #FFFFFF;
+      --field: #FFFFFF;
+      --line: rgba(30, 22, 80, 0.22);
+      --btn-bg: #5B3FD6;
+      --btn-ink: #FFFFFF;
+      --pop: #B82A78;
+      --focus: #5B3FD6;
+      --star: #3A2F8F;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #F4EFFF;
+    --bg-glow-a: #D9C8FF;
+    --bg-glow-b: #FFD9EC;
+    --ink: #1E1650;
+    --muted: #51468C;
+    --card: rgba(255, 255, 255, 0.8);
+    --card-solid: #FFFFFF;
+    --field: #FFFFFF;
+    --line: rgba(30, 22, 80, 0.22);
+    --btn-bg: #5B3FD6;
+    --btn-ink: #FFFFFF;
+    --pop: #B82A78;
+    --focus: #5B3FD6;
+    --star: #3A2F8F;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--bg);
+    background-image:
+      radial-gradient(900px 600px at 85% -10%, var(--bg-glow-a), transparent 70%),
+      radial-
